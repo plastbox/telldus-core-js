@@ -294,7 +294,7 @@ namespace telldus_v8 {
             String::New(batton->data),
         };
 
-        batton->callback->Call(batton->callback, 5, args);
+        batton->callback->Call(batton->callback, 3, args);
         scope.Close(Undefined());
 
         delete batton;
